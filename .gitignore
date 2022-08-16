@@ -23,6 +23,7 @@ node_modules
 doc/**/*.txt
 
 package-lock.json
+docker-compose.yml
 node_modules
 notes.txt
 .env
