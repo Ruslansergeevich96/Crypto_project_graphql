@@ -2,8 +2,9 @@ require('dotenv').config()
 const express = require('express')
 const {graphqlHTTP} = require('express-graphql')
 const cors = require('cors')
-const schema = require('./schema')
 const { ApolloServer } = require('apollo-server-express')
+const schema = require('./schema')
+const { typeDefs } = require('./Schema/TypeDefs')
 
 const PORT = process.env.PORT || 5000
 
