@@ -1,7 +1,7 @@
-const { UserList } = require("../FakeData");
+const { users } = require("../FakeData");
 
 const createUser = (input) => {
-  const id = date.now();
+  const id = Date.now();
   return {
     id,
     ...input,
@@ -12,7 +12,7 @@ const resolvers = {
   Query: {
     getAllUsers() {
       // database api
-      return UserList; // database
+      return users; // database
     },
     getUser: ({ id }) => {
       return users.find((user) => user.id == id);
